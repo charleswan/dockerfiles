@@ -1,0 +1,9 @@
+version: '3'
+services:
+  chinadns:
+    container_name: chinadns
+    image: charleswan/chinadns
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    restart: always
